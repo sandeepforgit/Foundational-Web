@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-slate-500" >
     <p id="para">hello world!</p>
+    <img src="https://code.visualstudio.com/" alt="">
     <script>
         let ele = confirm("stop")
         if(ele) document.getElementById("para").innerHTML = "you clicked YES";
         else document.getElementById("para").innerHTML = "you clicked CANCEL";
+
     </script>
 </body>
 </html>
