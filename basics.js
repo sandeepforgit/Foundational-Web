@@ -15,6 +15,45 @@
 // const arr = s.split(",");
 // console.log(arr);
 
-let company = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon';
-const arr = company.split(',');
-console.log(arr);
+// let company = 'Facebook,pw skills, Microsoft,pw skills, IBM, Oracle, Amazon';
+// const arr = company.split(',');
+// console.log(arr.indexOf("pw skills"));
+// console.log(arr.lastIndexOf("pw skills"));
+
+
+// - 4 > 3
+// - 4 >= 3
+// - 4 < 3
+// - 4 <= 3
+// - 4 == 4
+// - 4 === 4
+// - 4 != 4
+// - 4 !== 4
+// - 4 != '4'
+// - 4 == '4'
+// - 4 === '4'
+
+
+// console.log(4 > 3); // true
+// console.log(4 >= 3); // true
+// console.log(4 < 3); // false
+// console.log(4 <= 3); // false
+// console.log(4 == 4); // true
+// console.log(4 === 4); // true
+// console.log(4 != 4); // false
+// console.log(4 !== 4); // false
+// console.log(4 != '4'); // false
+// console.log(4 == '4'); // true
+// console.log(4 === '4'); // false
+
+
+const dat = new Date();
+console.log(dat.getFullYear());
+console.log(dat.getMonth());
+console.log(dat.getDate());
+console.log(dat.getDay());
+console.log(dat.getHours());
+console.log(dat.getMinutes());
+console.log(dat.getSeconds());
+console.log(dat.getTime());
+
