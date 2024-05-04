@@ -47,13 +47,18 @@
 // console.log(4 === '4'); // false
 
 
-const dat = new Date();
-console.log(dat.getFullYear());
-console.log(dat.getMonth());
-console.log(dat.getDate());
-console.log(dat.getDay());
-console.log(dat.getHours());
-console.log(dat.getMinutes());
-console.log(dat.getSeconds());
-console.log(dat.getTime());
+// const dat = new Date();
+// console.log(dat.getFullYear());
+// console.log(dat.getMonth());
+// console.log(dat.getDate());
+// console.log(dat.getDay());
+// console.log(dat.getHours());
+// console.log(dat.getMinutes());
+// console.log(dat.getSeconds());
+// console.log(dat.getTime());
 
+// const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+const d = new Date();
+
+console.log(`${d.getFullYear()}-${d.getMonth()}-${d.getDate()} ${d.getHours()}:${d.getMinutes()}`);
