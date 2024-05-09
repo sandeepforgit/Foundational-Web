@@ -10,22 +10,15 @@
     <!-- <label>Enter Number: </label>
     <input id="num" type="number">
     <button onclick="evenOrOdd()">Submit</button> -->
-    <!-- <h1> </h1> -->
+    <h1> </h1>
+
     
-    <label>Enter Operand 1 : </label>
-    <input id="num1" type="number">
-    <label>Enter Operand 2 : </label>
-    <input id="num2" type="number">
-    <button onclick="add()">Add</button>
-    <button onclick="sub()">Sub</button>
-    <button onclick="mul()">Mul</button>
-    <button onclick="div()">Div</button>
-    <h1></h1>
+
     <script>
         //basic promt
-        // const p = prompt("Enter your age: ");
-        // if(p >= 18) document.querySelector("h1").innerHTML = 'You are old enough to drive';
-        // else document.querySelector("h1").innerHTML = `Wait for ${18-p} years till you turn 18`;
+        const p = prompt("Enter your age: ");
+        if(p >= 18) document.querySelector("h1").innerHTML = 'You are old enough to drive';
+        else document.querySelector("h1").innerHTML = `Wait for ${18-p} years till you turn 18`;
 
         // even or odd
         // const evenOrOdd = () => {
@@ -33,27 +26,8 @@
         //     if(num%2 == 0) document.querySelector("h1").innerHTML = `${num} is EVEN`;
         //     else document.querySelector("h1").innerHTML = `${num} is ODD`;
         // }
-        const add = () => {
-            let a = parseFloat(document.getElementById("num1").value);
-            let b = parseFloat(document.getElementById("num2").value);
-            document.querySelector("h1").innerHTML = `Answer is ${a+b}`;
-        }
-        const sub = () => {
-            let a = parseFloat(document.getElementById("num1").value);
-            let b = parseFloat(document.getElementById("num2").value);
-            document.querySelector("h1").innerHTML = `Answer is ${a-b}`;
-        }
-        const mul = () => {
-            let a = parseFloat(document.getElementById("num1").value);
-            let b = parseFloat(document.getElementById("num2").value);
-            document.querySelector("h1").innerHTML = `Answer is ${a*b}`;
-        }
-        const div = () => {
-            let a = parseFloat(document.getElementById("num1").value);
-            let b = parseFloat(document.getElementById("num2").value);
-            document.querySelector("h1").innerHTML = `Answer is ${a/b}`;
-        }
         
+
     </script>
 </body>
 </html>
