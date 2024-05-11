@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            background-color: #fc0505;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .square{
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            background-color: #0bf154;
+            display: inline-block;  
+        }
+        body{
+            background-color: rgb(48, 45, 45);
+            height: 100vh;
+        }
+        #board{
+            background-color: rgb(38, 35, 35);
+            height: 80vh;
+        }
+        .btns{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            gap: 15px;
+        }
+        button{
+            height: 30px;
+            width: 60px;
+            border-radius: 10px;
+        }
+        .cirbtn{
+            background-color: #fc0507;
+        }
+        .sqrbtn{
+            background-color: #0bf154;
+        }
+    </style>
+</head>
+<body>
+    <div class="btns">
+        <button class="cirbtn" onclick="selectCircle()">Circle</button>
+        <button class="sqrbtn" onclick="selectSquare()">Square</button>
+        <button class="clbtn" onclick="clearAll()">clear</button>
+    </div>
+    <div id="board">
+    </div>
+<script>
+    let board = document.getElementById("board");
+    let name = "circle";
+    function selectCircle(){
+        name = "circle";
+    }
+    function selectSquare(){
+        name = "square";
+    }
+    function clearAll(){
+        board.innerHTML = "";
+    }
+    board.addEventListener("click",
+        function(event){
+            let element = document.createElement("div");
+            element.classList.add(name);
+            element.style.left = event.clientX + "px";
+            element.style.top = event.clientY + "px";
+            board.appendChild(element);
+        }
+    );
+</script>
+</body>
+</html>
