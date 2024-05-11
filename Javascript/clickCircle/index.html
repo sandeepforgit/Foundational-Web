@@ -15,25 +15,24 @@
             display: inline-block;
         }
         body{
-            background-color: bisque;
+            background-color: rgb(48, 45, 45);
             height: 100vh;
         }
     </style>
 </head>
 <body>
+    
 <script>
     let body = document.querySelector("body");
-
-
-body.addEventListener("click",
-    function(event){
-        let element = document.createElement("div");
-        element.classList.add("circle");
-        element.style.left = event.clientX + "px";
-        element.style.top = event.clientY + "px";
-        body.appendChild(element);
-    }
- );
+    body.addEventListener("click",
+        function(event){
+            let element = document.createElement("div");
+            element.classList.add("circle");
+            element.style.left = event.clientX + "px";
+            element.style.top = event.clientY + "px";
+            body.appendChild(element);
+        }
+    );
 </script>
 </body>
 </html>
