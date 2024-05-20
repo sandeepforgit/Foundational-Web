@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="container" class="grid justify-center items-center p-32 bg-sky-300">
+        <h1 class="text-center text-3xl font-bold">Weather</h1>
+        <form action="" onsubmit="weather(event)" class="p-8 flex gap-2 justify-center">
+            <input class="outline" type="text" id="searchTerm" placeholder="Enter City Name">
+            <button class="outline bg-orange-300 p-1">Search</button>
+        </form>
+        <section id="card" class="grid grid-cols-3 size-72 w-96 place-items-center items-center text-center">
+            <div>
+                <h4 class="font-medium">Country</h4>
+                <p id="countryName">___</p>
+            </div>
+            <div>
+                <h4 class="font-medium">Region</h4>
+                <p id="regionName">___</p>
+            </div>
+            <div>
+                <h4 class="font-medium">City</h4>
+                <p id="cityName">___</p>
+            </div>
+            <div>
+                <h4 class="font-medium">Temperature</h4>
+                <p id="temperature">___</p>
+            </div>
+            <div>
+                <h4 class="font-medium">WindSpeed</h4>
+                <p id="windSpeed">___</p>
+            </div>
+            <div>
+                <img id="logoImg" src="" alt="SkyImg">
+                <p id="condition">___</p>
+            </div>
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
