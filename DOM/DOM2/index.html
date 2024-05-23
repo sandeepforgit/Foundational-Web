@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex">
+    <button id="btn" onclick="myClick()" class="rounded-md w-20 p-1 m-10 border-2 border-indigo-500">Click</button>
+    <div id="element" class="w-20 p-1 m-10">
+        <h3>TRUE</h3>
+    </div>
+    <script>
+        const element = document.getElementById("element");
+        let cnt = 0;
+        const myClick = () => {
+            if(cnt%2 == 0){
+                element.innerText = "False";
+            }
+            else{
+                element.innerText = "True";
+            }
+            cnt++;
+        }
+    </script>
+</body>
+</html>
