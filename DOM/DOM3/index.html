@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <form action="" onsubmit="add(event)">
-        <input type="text" id="inp" placeholder="Name">
-        <button >Add</button>
-    </form>
-    <ul>
-
-    </ul>
+<body class="flex items-center justify-center">
+    <div class="p-10">
+        <form action="" onsubmit="add(event)">
+            <input type="text" class="outline" id="inp" placeholder="Name">
+            <button class="outline w-10">Add</button>
+        </form>
+        <ul class="list-disc p-11">
+        </ul>
+    </div>
     <script>
         const ul = document.querySelector("ul");
         const add = (event) => {
