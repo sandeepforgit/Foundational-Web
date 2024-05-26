@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM4</title>
+</head>
+<body>
+    <div>
+        <img src="./assets/img1.jpg" alt="" style="height: 10cm; width:16cm">
+        <div style="display:flex; justify-content:space-between; width:16cm">
+            <button id="pre" onclick="prev()">prev</button>
+            <button id="nxt" onclick="nxt()">next</button>
+        </div>
+    </div>
+    <script>
+        const img = document.querySelector("img");
+        let cnt = 1;
+        const prev = () => {
+            if(cnt == 1)cnt = 8;
+            else cnt--;
+            img.setAttribute("src",`./assets/img${cnt}.jpg`);
+        }
+        const nxt = () => {
+            if(cnt == 8) cnt = 1;
+            else cnt++;
+            img.setAttribute("src",`./assets/img${cnt}.jpg`);
+        }
+    </script>
+</body>
+</html>
