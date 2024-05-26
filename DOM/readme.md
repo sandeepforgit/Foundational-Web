@@ -1,1 +1,1 @@
-## This Folder contains my work during my learning of DOM manipulation
+## This Folder contains all of my work during my learning of DOM manipulation
