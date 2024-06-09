@@ -19,7 +19,7 @@ function App() {
         class=" w-20 h-7 text-zinc-400 font-extralight outline outline-gray-400 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300"
         onClick={() => dispatch(addTodo(inp))}
         >
-          Add Task
+        Add Task
         </button>
       </div>   
     </div>
